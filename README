@@ -1,0 +1,17 @@
+run - programming language, object oriented, strong typed, can be translated
+and compiled, main goal to be as fast as c++ compiled binary, easier bindings
+with c++ code, native libs.
+
+https://github.com/gittup/tup - builder
+https://github.com/google/googletest - test lib
+
+[build]
+# debug build config
+tup variant configs/debug.config
+# or release build config
+tup variant configs/release.config
+# build
+tup
+
+runc - run compiler
+runt - run translator

@@ -1,0 +1,6 @@
+include_rules
+
+RPATH += -Wl,-rpath="$"ORIGIN/../run:"$"ORIGIN
+
+: foreach *.cpp |> !ccp |> {objs}
+: {objs} | ../run/librun.so |> !exe |>

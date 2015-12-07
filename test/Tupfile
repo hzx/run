@@ -1,0 +1,7 @@
+include_rules
+
+LIBS += -lgmock -lgtest -lpthread
+RPATH += -Wl,-rpath="$"ORIGIN/../run:"$"ORIGIN
+
+: foreach *.cpp |> !cc |> {objs}
+: {objs} | ../run/librun.so |> !exe |>
