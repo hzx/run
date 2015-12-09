@@ -1,11 +1,12 @@
-run - programming language, object oriented, strong typed, can be translated
+run - programming language, object oriented, strongly typed, can be translated
 and compiled, main goal to be as fast as c++ compiled binary, easier bindings
-with c++ code, native libs.
+with c++ code, libs.
 
 https://github.com/gittup/tup - builder
 https://github.com/google/googletest - test lib
 
 [build]
+tup init
 # debug build config
 tup variant configs/debug.config
 # or release build config
